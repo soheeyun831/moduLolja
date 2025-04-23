@@ -3,7 +3,6 @@
     <img src="@/assets/images/logo.png" alt="로고" class="logo"/>
     <ul class="form-group">
       <li class="form-group__item">
-        {{isStep}}
         <h3 class="form-title">종류 세팅</h3>
         <div class="check-button-group">
           <button class="modu-button check-type"
