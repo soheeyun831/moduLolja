@@ -49,9 +49,9 @@
                     2개까지만 선택 가능
                   </template>
                 </multiselect>
-                <multiselect v-model="mem.tier" :options="visibleTierData" placeholder="실제 티어" track-by="name"
+                <multiselect v-model="mem.tier" :options="visibleTierData" placeholder="추정 티어" track-by="name"
                              label="name" :show-labels="false" class="modu-select"/>
-                <multiselect v-model="mem.visibleTier" :options="visibleTierData" placeholder="현재 티어" track-by="name"
+                <multiselect v-model="mem.visibleTier" :options="visibleTierData" placeholder="본인 피셜 티어" track-by="name"
                              label="name" :show-labels="false" class="modu-select"/>
               </template>
               <button v-if="isStep === 2" class="text-button" @click="memberList.splice(key, 1)">❎</button>
@@ -59,8 +59,8 @@
           </ul>
           <p v-if="isType === 'balance' && isStep === 2" class="description">
             *
-            첫번째 티어 선택에는 현재 티어가 아닌 판단된 실력으로 적으시면 됩니다.<br/>
-            두번째 티어 선택은 마지막 노출될 티어입니다.
+            첫번째 추정 티어 선택에는 현재 티어가 아닌 주최자 기준 판단된 실력으로 선택하시면 됩니다.<br/>
+            두번째 본인 피셜 티어 선택은 결과 페이지에 노출될 티어입니다. (밸런스 짜는 것에 반영X)
           </p>
         </div>
       </li>
