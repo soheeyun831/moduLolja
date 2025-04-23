@@ -9,11 +9,10 @@
 
 <style lang="scss" scoped>
 .wrap {
-  width: 100vw;
   height: 100vh;
+  padding: 3rem 0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 </style>
