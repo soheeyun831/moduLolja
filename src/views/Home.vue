@@ -3,6 +3,7 @@
     <img src="@/assets/images/logo.png" alt="로고" class="logo"/>
     <ul class="form-group">
       <li class="form-group__item">
+        {{isStep}}
         <h3 class="form-title">종류 세팅</h3>
         <div class="check-button-group">
           <button class="modu-button check-type"
@@ -169,9 +170,7 @@ const setGameType = (type: 'ladder' | 'negative') => {
 };
 
 const prevForm = () => {
-  if (isStep.value === 2) {
-    isStep.value = memberList.value.length > 0 ? 1 : 2;
-  } else {
+  if (isStep.value !== 1) {
     isStep.value -= 1;
   }
 };
